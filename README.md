@@ -2,7 +2,7 @@
 Test que valida el proceso de login de la plataforma DexManager
 
 ## Requisitos
-- Tener java instalado
+- Tener Java y Maven instalado
 - Si desean reporte tener instalado allure 
 
 ## ¿Como ejecutar?
