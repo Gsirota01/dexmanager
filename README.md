@@ -7,3 +7,6 @@ Test que valida el proceso de login de la plataforma DexManager
 
 ## ¿Como ejecutar?
 - Clonar el proyecto y ejecutar con ```mvn test```
+
+## ¿Como ver el reporte de allure?
+- Ejecutar ```allure serve allure-results/```
