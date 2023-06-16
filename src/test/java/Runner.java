@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 @Test
 @CucumberOptions(glue = {"actions"},
-                 plugin = {"pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" },
+                 plugin = {"pretty"},
                  features = {"src/test/resources/features/"})
 public class Runner extends AbstractTestNGCucumberTests {
 }

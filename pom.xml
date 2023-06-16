@@ -68,13 +68,6 @@
             <version>${cucumber.version}</version>
             <scope>compile</scope>
         </dependency>
-        <!--ALLURE-->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-cucumber7-jvm</artifactId>
-            <version>${allure-cucumber.version}</version>
-            <scope>compile</scope>
-        </dependency>
         <!--SELENIDE-->
         <dependency>
             <groupId>com.codeborne</groupId>
