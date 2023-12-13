@@ -16,7 +16,7 @@ public class DexManagerHomeActions {
     @BeforeAll
     public static void setup() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments( "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
+        options.addArguments( "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage", "--headless");
         Configuration.browserCapabilities.setCapability(ChromeOptions.CAPABILITY, options);
     }
     @Given("el sitio de DexManager")
