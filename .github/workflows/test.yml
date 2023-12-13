@@ -1,0 +1,29 @@
+name: Maven Tests
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - name: Checkout Code 
+      uses: actions/checkout@v2
+    - name: Set up Java
+      uses: actions/setup-java@v2
+      with:
+        java-version: 11
+        distribution: 'temurin'
+   
+    - name: Set up cucumber
+      run: echo "${{ secrets.CUCUMBER_SETTINGS }}" >> src/test/resources/cucumber.properties
+    - name: Build with Maven
+      run: |
+          echo "${{secrets.ENVIRONMENT_VARIABLES}}" >> conf/dexManager.properties
+          mvn clean test
+          
